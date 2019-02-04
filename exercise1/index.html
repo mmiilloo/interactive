@@ -6,13 +6,53 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="#" />
+    <style>
+    body {
+      background-color: whitesmoke;
+      font-family: monospace;
+      font-size: 2;
+      color: darkgreen;
+      border: 0px dashed darkgreen;
+      max-width: 500px;
+      padding: 10px;
+      margin: auto;
+    }
+      #rounded {
+  border: 1px dashed darkgreen;
+  padding: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 10px 10px darkgreen;
+}
+    a:link {
+      color: darkgreen;
+    }
+
+    /* visited link */
+    a:visited {
+      color: darkgreen;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: whitesmoke;
+      background-color: darkgreen;
+    }
+
+    /* selected link */
+    a:active {
+      color: goldenrod;
+    }
+    </style>
   </head>
   <body>
+    <div id="rounded">
     <h1>Exercise 1. HTML</h1>
     <ul>
       <li><a href="restaurant.html">restaurant</a>
       <li><a href="writing.html">writing</a>
     </ul>
     <a href="../index.html">Back</a>
+  </div>
   </body>
 </html>
