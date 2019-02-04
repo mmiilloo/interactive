@@ -2,16 +2,110 @@
 <html>
 
 <head>
-    <title>My Wonderful Site</title>
+    <title>* Jeera Thai *</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="#" />
+    <style>
+.looseframe {
+  background-color: whitesmoke;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 600px;
+  border: 1px solid tomato;
+  padding: 25px;
+  margin: auto;
+}
+.tightframe {
+  background-color: tomato;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 580px;
+  border: 0px solid tomato;
+  padding: 5px;
+  margin: auto;
+}
+.inverse {
+  background-color: tomato;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-width: 580px;
+  border: 0px solid tomato;
+  padding: 5px;
+  margin: auto;
+}
+
+/* unvisited link */
+a:link {
+  color: tomato;
+}
+
+/* visited link */
+a:visited {
+  color: tomato;
+}
+
+/* mouse over link */
+a:hover {
+  color: whitesmoke;
+  background-color: tomato;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/* Red border */
+hr.new1 {
+  border-top: 1px solid tomato;
+}
+
+/* Dashed red border */
+hr.new2 {
+  border-top: 1px dashed tomato;
+}
+
+/* Dotted red border */
+hr.new3 {
+  border-top: 1px dotted tomato;
+}
+br.full {
+    line-height: 100%;
+}
+h3 {
+  font-display:
+}
+mark {
+  background-color: tomato;
+  color: whitesmoke;
+}
+text {
+  font-family: monospace;
+  color: tomato;
+}
+body {
+  background: whitesmoke;
+margin-left: 10px;
+padding: 20px;
+font-family: monospace;
+}
+span {
+    display: inline-block;
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+</style>
 </head>
 
 <body>
-    <h1>Jeera Thai</h1>
+  <font color="tomato">[ inspired by <a href="http://part.archi/">PART</a> ]</font>
+    <text><div class="looseframe">
+<h1>Jeera Thai</h1>
     <h3><em>HEALTHY THAI KITCHEN</<em></em></h3>
-    <br>
+    <hr class="new2">
     <h4>216 Crown Street<br>
       New Haven, CT 06510<br>
       TEL: (203) 562-5856<br>
@@ -23,8 +117,27 @@
       <a href="https://www.facebook.com/Jeera-Thai-525747697486811/">facebook</a><br><br>
       New Haven // Westport<br><br>
       Vegan, gluten free upon request<br></h4>
-    <hr>
-    <h3>AAHAAN WANG (APPETIZERS)</h3>
+      <hr class="new2">
+      <table style="width:100%">
+        <tr>
+            <td>• <a href="#aahaan-wang">AAHAAN WANG</a></td>
+                        <td>• <a href="#aahaan-pad">AAHAAN PAD</a></td>
+        </tr>
+        <tr><td>• <a href="#thom">THOM</a></td>
+                        <td>• <a href="#kaeng">KAENG</a></td>
+        </tr>
+        <tr>
+            <td>• <a href="#yum">YUM</a></td>
+                        <td>• <a href="#khao">KHAO KUB KYUAYTIEW</a></td>
+        </tr>
+        <tr><td>• <a href="#aahaan-pised">AAHAAN PISED</a></td>
+                        <td>• <a href="#lunch">LUNCH SPECIALS</a></td>
+        </tr>
+        <tr><td>• <a href="#aahaan-yangd">AAHAAN YANGD</a></td>
+                        <td>• <a href="#sides">SIDES & DRINKS</a></td>
+        </tr></table>
+<hr class="new2">
+    <h3><a id="aahaan-wang"><mark>* AAHAAN WANG (APPETIZERS) *</mark></a></h3>
     <ol>
         <li><strong>PAD THAI SPRING ROLLS – $5.95</strong>
             <br> Crispy Thai spring rolls with pineapple sauce
@@ -35,16 +148,16 @@
                     <li><strong>ROTI CANAI – $5.95</strong>
                         <br> Southern Thai-style crepe with yellow curry dipping sauce
     </ol>
-    <br>
-    <h3>THOM (SOUP)</h3>
+    <hr class="new2">
+    <h3><a id="thom"><mark>* THOM (SOUP) *</mark></a></h3>
     <ol>
         <li><strong>TOM YUM (VEGETARIAN AVAILABLE) – $4.95</strong>
             <br> Spicy shimp soup with lemongrass, galangal and fresh lime leaf. Refined and powerful
             <li><strong>THAI COCONUT SOUP (VEGETARIAN AVAILABLE) – $4.95</strong>
                 <br> Refreshing soup with chicken lemongrass, galangal and fresh lime leaf in coconut broth
     </ol>
-    <br>
-    <h3>YUM (SALAD)</h3>
+    <hr class="new2">
+    <h3><a id="yum"><mark>* YUM (SALAD) *</mark></a></h3>
     <ol>
         <li><strong>SOMTUM – $8.95</strong>
             <br> Thai traditional green papaya salad
@@ -56,8 +169,8 @@
                     <li><strong>SALMON MANGO SALAD – $14.95</strong>
                         <br> Seared salmon with fresh mango, clilantro, red onion, scallion, fresh chili, and fresh lime juice
     </ol>
-    <br>
-    <h3>AAHAAN PISED (CHEF SPECIAL)</h3>
+    <hr class="new2">
+    <h3><a id="aahaan-pised"><mark>* AAHAAN PISED (CHEF SPECIAL) *</mark></a></h3>
     <em>Served with red jasmine rice</em>
     <ol>
         <li><strong>SHRIMP MANGO CURRY – $14.95</strong>
@@ -71,19 +184,19 @@
                         <li><strong>THAI CHICKEN TERIYAKI – $11.95</strong>
                             <br> Chicken stir-fried with fresh ginger, vegetables & roasted sesame
     </ol>
-    <br>
-    <h3>AAHAAN YANGD (BBQ)</h3>
+    <hr class="new2">
+    <h3><a id="aahaan-yangd"><mark>* AAHAAN YANGD (BBQ) *</mark></a></h3>
     <ul>
         <li><strong>THAI BBQ CHICKEN – $13.95</strong>
             <br> Marinated chicken with Thai seasonings served with black sticky rice and spicy tamarind sauce
         </li>
     </ul>
-    <br>
-    <br>
-    <h3>AAHAAN PAD (STIR FRY)</h3>
+    <br><hr class="new2">
+
+    <h3><a id="aahaan-pad"><mark>* AAHAAN PAD (STIR FRY) *</mark></a></h3>
     <em>Served with red jasmine rice and choice of meat</em>
-    <br>
-    <em><table style="width:67%">
+    <br><br>
+    <em><table style="width:100%">
                       <tr>
                           <td>Vegetable – $8.95</td>
                           <td>Duck – $12.95</td>
@@ -96,7 +209,7 @@
                           <td>Chicken – $9.95</td>
                           <td>Shrimp – $11.95</td>
                       </tr>
-                      </table></em>
+                    </table></em>
     <ol>
         <li><strong>KAPROW</strong>
             <br> Asian vegetables, onion, garlic, carrot and chilies in hot basil sauce
@@ -109,11 +222,11 @@
                         <li><strong>HIMMAPAN</strong>
                             <br> bokchoy, bell pepper, onion, carrot, pineapple and cashew nuts with homemade sauce
     </ol>
-    <br>
-    <h3>KAENG (CURRY)</h3>
+    <hr class="new2">
+    <h3><a id="kaeng"><mark>* KAENG (CURRY) *</mark></a></h3>
     <em>Served with red jasmine rice and choice of meat</em>
-    <br>
-    <em><table style="width:67%">
+    <br><br>
+    <em><table style="width:100%">
                       <tr>
                           <td>Vegetable – $8.95</td>
                           <td>Duck – $12.95</td>
@@ -139,9 +252,8 @@
                         <li><strong>JUNGLE</strong>
                             <br> A very spicy jungle curry without coconut, but with krachai root and hot basil
     </ol>
-
-    <br>
-    <h3>KHAO KUB KUAYTIEW (RICE & NOODLE)</h3>
+    <hr class="new2">
+    <h3><a id="khao"><mark>* KHAO KUB KUAYTIEW (RICE & NOODLE) *</mark></a></h3>
     <em>Choice of meat above</em>
     <ol>
         <li><strong>JEERA HOUSE FRIED RICE</strong>
@@ -158,8 +270,8 @@
         <li><strong>KHAO SOY (CURRY NOODLE SOUP)</strong>
             <br>Northern Thailand noodle curry soup with Asian vegetables. Pick your own meat and noodles</li>
     </ol>
-<hr>
-    <h3>LUNCH SPECIALS</h3> MON-FRI (11:30 AM-2:30 PM)
+<hr class="new2">
+    <h3><a id="lunch"><mark>* LUNCH SPECIALS *</mark></a></h3>MON-FRI (11:30 AM-2:30 PM)
     <br>
     <br>Choice of protein:
     <br>
@@ -174,34 +286,32 @@
         <li>KEEMAO (DRUNKEN) NOODLES</li>
         <li>PAD SE-EW</li>
     </ul></li>
-    <br>
     <li><h4>RICE & NOODLE</h4>
-    <em>Served with red rice</em><br>
+    Served with red rice<br>
     <ul><br>
         <li>PAD KAPROW </li>
         <li>PAD PAK RUAM</li>
         <li>JEERA'S DISH </li>
         <li>PAD HIM MA PAN </li>
     </ul></li>
-    <br>
     <li><h4>CURRY IN A HURRY</h4>
-    <em>Vegetable$8.95, Tofu or Chicken – $9.95, Shrimp – $10.95 // Served with rice</em>
+      Served with rice.<br>
+      <em>Vegetable$8.95, Tofu or Chicken – $9.95, Shrimp – $10.95</em>
     <ul><br>
         <li>RED CURRY</li>
         <li>PEANUT CURRY</li>
         <li>MUSSAMAN CURRY</li>
         <li>JUNGLE CURRY</li>
     </ul></li></ol>
-    <hr>
-    <h3>SIDES</h3>
-    <ul>
+<hr class="new2">
+    <h3><a id="side"><mark>* SIDES *</mark></a></h3>
+<ul>
         <li> RED JASMINE RICE – $1.00</li>
-        <li>PEANUT SAUCE – $1.00</li> –
-        <li>STEAMED RICE NOODLE – $2.00</li> –
+        <li>PEANUT SAUCE – $1.00</li>
+        <li>STEAMED RICE NOODLE – $2.00</li>
     </ul>
-
-    <hr>
-    <h3>KREA DEAM (DRINKS)</h3>
+<hr class="new2">
+    <h3><mark>* KREA DEAM (DRINKS) *</mark></h3>
     <Ol>
         <li>THAI ICED TEA – $2.75</li>
         <li>THAI ICE COFFEE – $2.75</li>
@@ -210,7 +320,7 @@
         <li>HOT GINGER TEA – $2.50</li>
         <li>HOT CHRYSANTHEMUM TEA – $2.50</li>
         <li>SODA, SPRING WATER – $2.00</li>
-    </ol>
+    </ol></div></text>
 </body>
 
 </html>

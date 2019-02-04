@@ -5,10 +5,74 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="#" />
+    <style>
+    .looseframe {
+      background-color: white;
+      margin-left: 10%;
+      margin-right: 10%;
+      max-width: 67%;
+      border: 1px dashed tomato;
+      padding: 25px;
+      margin: auto;
+    }
+    p {
+      font-family: monospace;
+      color: tomato;
+    }
+    h1 {
+      font-family: monospace;
+      color: tomato;
+    }
+    hr.new1 {
+      border-top: 1px solid tomato;
+    }
+
+    /* Dashed red border */
+    hr.new2 {
+      border-top: 1px dashed tomato;
+    }
+
+    /* Dotted red border */
+    hr.new3 {
+      border-top: 1px dotted tomato;
+    }
+    #myDIV {
+  border: 0px solid black;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 600s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+  50% {word-spacing: 100em;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  50% {word-spacing: 100em;}
+}
+@-webkit-keyframes mymove {
+50% {line-height: 50em;}
+}
+
+@keyframes mymove {
+50% {line-height: 500px;}
+}
+p {
+            letter-spacing: 0em;
+            animation: mymove 600s infinite;
+         }
+         @keyframes mymove {
+            70% {
+               letter-spacing: 50em;
+            }
+         }
+</style>
+</head>
 <body>
-  <hr><hr><hr>
+  <div class="looseframe">
+<div id="myDIV">
   <h1>entropy</h1>
-  <div>
     <p>Because of my parents’ propensity for living in fixer-uppers, I spent my formative years in houses that were in various states of repair.
     When I was an infant we moved into a house that my parents had spent the previous 10 months cleaning and renovating in preparation to make
     it livable for the expanding family. They worked in tandem late into the night and through weekends, in between other obligations of family, work, and school.
@@ -50,7 +114,6 @@
     limits of an image, playlist, blog post, site, construction or production schedule. To emphasize the importance of considering the source of a material, processes of
     fabrication, transport, assembly, making and beyond. To re-define the lifecycle of a project to include the <em>dispersion</em> of materials and ideas.
     To consider evolving functions, uses, and potential adaptations. To embrace the inevitability of entropy. To make something that gets more beautiful as it falls apart.
-    </div>
-    <hr><hr><hr>
+  </div>
   </body>
 </html>
