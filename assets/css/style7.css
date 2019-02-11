@@ -1,0 +1,129 @@
+
+body {
+  font-size: 90px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url("../BG_circles.png");
+  background-attachment: fixed;
+  color: black;
+  z-index: 10;
+}
+.frame1 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_1.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame2 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_2.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame3 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_3.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame4 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_4.png");
+  padding: 80px;
+  background-size: cover;
+  z-index: 2;
+}
+.frame5 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_5.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame6 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_6.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame7 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_7.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame8 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_8.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame9 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_9.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame10 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_10.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame11 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../bg_11.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame12 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../low_r-01.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+
+header {
+  padding-left: 10px;
+  font-size: 70px;
+  left: 20px;
+  position: fixed;
+  top: 10px;
+  color: rgba(0, 120, 0, 0.5);
+  width: 100%;
+  z-index: -1;
+}
+
+footer {
+  padding-left: 10px;
+    font-size: 70px;
+  color: rgba(0, 120, 0, .5);
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  z-index: -1;
+}

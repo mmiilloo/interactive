@@ -1,0 +1,140 @@
+
+body {
+  font-size: 90px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url("../blue_1.png");
+  background-attachment: fixed;
+  color: rgba(0, 0, 0, 0.75);
+  z-index: 10;
+}
+
+.banner {
+  font-size: 500%;
+  color: rgba(255, 255, 255, 0.80);
+}
+
+.detail {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.frame1 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_1.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame2 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_2.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame3 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_3.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame4 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_4.png");
+  padding: 80px;
+  background-size: cover;
+  z-index: 2;
+}
+.frame5 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_5.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame6 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_6.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame7 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_7.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame8 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_8.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame9 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_9.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame10 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_10.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame11 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_11.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+.frame12 {
+  padding: 50px;
+  border: 3px solid black;
+  background-image: url("../color_01.png");
+  padding: 80px;
+  z-index: 2;
+
+}
+
+header {
+  padding-left: 10px;
+  font-size: 70px;
+  left: 20px;
+  position: fixed;
+  top: 10px;
+  color: rgba(255, 0, 0, .8);
+  width: 100%;
+  z-index: -1;
+}
+
+footer {
+  padding-left: 10px;
+    font-size: 70px;
+  color: rgba(255, 0, 0, .8);
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  z-index: -1;
+}

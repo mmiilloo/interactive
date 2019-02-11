@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>* JEERA THAI *</title>
+    <style>
+    .grid-container {
+            display: grid;
+            grid-template-columns: .75fr 1fr 1fr 1fr .75fr;
+            grid-template-rows: .75fr 1fr 1fr 1fr .75fr;
+            background-color: white;
+            border: 0px solid rgba(255, 0, 255, 1.0);
+            grid-gap: 5px;
+            padding-left: 10%;
+            padding-right: 10%;
+            justify-self: center;
+            vertical-align: middle;
+            margin: auto;
+            overflow: inherit;
+            max-height: 90vh;
+            grid-template-areas: "curry curry rice-noodle rice-noodle stir-fry" "specials menu menu menu stir-fry" "specials menu menu menu lunch" "apps menu menu menu lunch" "apps bbq soup salad sides";
+        }
+        a {
+          text-decoration: none;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .curry {
+            grid-area: curry;
+        }
+
+        .rice-noodle {
+            grid-area: rice-noodle;
+        }
+
+        .stir-fry {
+            grid-area: stir-fry;
+        }
+
+        .specials {
+            grid-area: specials;
+        }
+
+        .lunch {
+            grid-area: lunch;
+        }
+
+        .soup {
+            grid-area: soup;
+        }
+
+        .salad {
+            grid-area: salad;
+        }
+
+        .sides {
+            grid-area: sides;
+        }
+
+        .bbq {
+            grid-area: bbq;
+        }
+
+        .apps {
+            grid-area: apps;
+        }
+
+        .wrapper > div {
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            display: grid;
+            padding: 15px 70px;
+            border: 5px solid #B17461;
+            color: #B17461;
+        }
+
+        .grid-item {
+            background-color: white;
+            border: 1px solid rgba(255, 0, 255, 1.0);
+            font-size: 18px;
+            color: rgba(255, 0, 255, 1.0);
+            text-align: center;
+            min-height: 4vh;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+        }
+
+        #parent {
+            display: table;
+            width: 100%;
+            height: 200px;
+            border: 3px dashed #1c87c9;
+            text-align: center;
+        }
+
+        #child {
+            vertical-align: middle;
+        }
+
+        footer {
+            padding-left: 10%;
+            color: rgba(255, 0, 255, 0.3);
+        }
+
+        iframe {
+            margin: auto;
+            border: 0px;
+            overflow-y: auto;
+            min-height: 50vh;
+        }
+
+        body {
+            font-family: monospace;
+            padding: 50px;
+            margin: auto;
+        }
+
+        a:link {
+            color: rgba(255, 0, 255, 1.0);
+            display: block;
+            top: 0;
+            left: 0;
+        }
+
+        a:visited {
+            color: rgba(255, 0, 255, 1.0);
+        }
+
+        a:hover {
+            color: white;
+            background-color: rgba(255, 0, 255, 1.0);
+            transition: .12s;
+        }
+
+        a:active {
+            color: white;
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="menu">
+            <div class="grid-item">
+                <iframe width="100%" height="100%" name="iframe_a"></iframe>
+            </div>
+        </div>
+        <div class="curry">
+            <div class="grid-item">
+                <a href="curry.html" target="iframe_a">
+                    <br>
+                    <br>CURRY
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+        <div class="rice-noodle">
+            <div class="grid-item">
+                <a href="rice-noodle.html" target="iframe_a">
+                    <br>
+                    <br>RICE & NOODLES
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+            </div>
+        </div>
+        <div class="stir-fry">
+            <div class="grid-item">
+                <a href="stir-fry.html" target="iframe_a">
+                    <br>
+                    <br>
+                    <br>S
+                    <br>T
+                    <br>I
+                    <br>R
+                    <br>
+                    <br>F
+                    <br>R
+                    <br>Y
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+        <div class="specials">
+            <div class="grid-item">
+                <a href="specials.html" target="iframe_a">
+                    <br>
+                    <br>
+                    <br>
+                    <br>S
+                    <br>P
+                    <br>E
+                    <br>C
+                    <br>I
+                    <br>A
+                    <br>L
+                    <br>S
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+        <div class="lunch">
+            <div class="grid-item">
+                <a href="lunch.html" target="iframe_a">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>L
+                    <br>U
+                    <br>N
+                    <br>C
+                    <br>H
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+        <div class="soup">
+            <div class="grid-item">
+                <a href="soup.html" target="iframe_a">
+                    <br>
+                    <br>
+                    <br>SOUP
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+        <div class="salad">
+            <div class="grid-item">
+                <a href="salad.html" target="iframe_a">
+                    <br>
+                    <br>
+                    <br>SALAD
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+        <div class="sides">
+            <div class="grid-item">
+                <a href="sides.html" target="iframe_a">
+                    <br>
+                    <br>
+                    <br>SIDES
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+        <div class="bbq">
+            <div class="grid-item">
+                <a href="bbq.html" target="iframe_a">
+                    <br>
+                    <br>
+                    <br>BBQ
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+        <div class="apps">
+            <div class="grid-item">
+                <a href="apps.html" target="iframe_a">
+                    <br>
+                    <br>
+                    <br>
+                    <br>A
+                    <br>P
+                    <br>P
+                    <br>S
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <footer>
+        JEERA THAI
+        <br> 216 Crown Street, New Haven, CT 06510
+        <br> TEL: (203) 562-5856 / FAX: (203) 777-7226
+        <br> HOURS: Monday–Saturday 11:30 AM–10:00 PM, Sunday 12:00 PM–10:00 PM / $$$ CASH ONLY $$$
+        <br> New Haven + Westport / Vegan, gluten free upon request
+        <br>
+    </footer>
+</body>
+
+</html>

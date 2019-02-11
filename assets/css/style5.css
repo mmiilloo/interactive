@@ -1,0 +1,127 @@
+/* style5.css */
+
+body {
+    color: rgba(0, 100, 255, 0.4);
+}
+
+.detail {
+    font-size: 15px;
+}
+
+a:link {
+    color: rgba(255, 0, 255, 0.35);
+    display: block;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: rgba(255, 0, 255, 0.35);
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: rgba(255, 0, 255, .75);
+    background-color: rgba(255, 255, 0, .85);
+}
+
+
+/* selected link */
+
+a:active {
+    color: blue;
+}
+
+
+/* Red border */
+
+hr.new1 {
+    border-top: 1px solid tomato;
+}
+
+
+/* Dashed red border */
+
+hr.new2 {
+    border-top: 1px dashed tomato;
+}
+
+
+/* Dotted red border */
+
+hr.new3 {
+    border-top: 1px dotted tomato;
+}
+
+br.full {
+    line-height: 100%;
+}
+
+h3 {
+    transform: rotate(-5deg) translateY(-15px) translateX(-55px);
+    color: rgba(255, 0, 255, 0.50);
+}
+
+mark {
+    background-color: tomato;
+    color: #ebebeb;
+}
+
+text {
+    font-family: monospace;
+}
+
+body {
+    background: #ebebeb;
+    margin-left: 100px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    padding: 25px;
+    color: rgba(255, 0, 255, 0.35);
+}
+
+header {
+    padding: 100px;
+    position: fixed;
+    color: rgba(255, 0, 0, 0.35);
+    width: 100%;
+    top: 0px;
+    transform: rotate(5deg);
+}
+
+footer {
+    padding-left: 10%;
+    color: rgba(255, 0, 0, 0.35);
+    position: fixed;
+    bottom: 10px;
+    left: -110px;
+    transform: rotate(5deg);
+}
+
+hr {
+    color: rgba(0, 0, 255, 0.5);
+}
+
+.frame {
+    background-color: #ebebeb;
+    max-width: 80%;
+    border: 1px dashed rgba(0, 255, 0, .9);
+    padding: 25px;
+    margin: auto;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+}

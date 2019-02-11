@@ -1,0 +1,195 @@
+/* style5.css */
+
+body {
+color: rgba(10, 10, 10, 0.5);
+}
+#grad1 {
+  height: 100%;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(255, 180, 180), rgb(180, 200, 255)); /* Standard syntax (must be last) */
+}
+
+.detail {
+  font-size: 10px;
+}
+
+
+a:link {
+  color: rgba(255, 0, 0, .8);
+  display: block;
+}
+
+/* visited link */
+a:visited {
+  color: rgba(255, 0, 0, .8);
+}
+
+/* mouse over link */
+a.first-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(255, 0, 0, .40);
+}
+a.second-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(255, 106, 0, .40);
+}
+a.third-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(255, 212, 0, .40);
+}
+a.fourth-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(190, 255, 0, .40);
+}
+a.fifth-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(85, 255, 0, .40);
+}
+a.sixth-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(0, 255, 21, .40);
+}
+a.seventh-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(0, 255, 127, .40);
+}
+a.eighth-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(0, 255, 233, .40);
+}
+a.ninth-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(0, 169, 255, .40);
+}
+a.tenth-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(0, 64, 255, .40);
+}
+a.eleventh-color:hover {
+  color: rgba(255, 0, 255, .80);
+  background-color: rgba(43, 0, 255, .40);
+}
+
+
+a.first-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.second-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.third-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.fourth-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.fifth-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.sixth-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.seventh-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.eighth-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.ninth-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.tenth-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+a.eleventh-color:active {
+  color: rgba(0, 0, 255, 1.0);
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+/* Red border */
+hr.new1 {
+  border-top: 1px solid tomato;
+}
+
+/* Dashed red border */
+hr.new2 {
+  border-top: 1px dashed tomato;
+}
+
+/* Dotted red border */
+hr.new3 {
+  border-top: 1px dotted tomato;
+}
+br.full {
+    line-height: 100%;
+}
+h3 {
+  transform: rotate(0deg) translateY(0px) translateX(-50px);
+  color: rgba(10, 10, 10, 0.5);
+}
+mark {
+  background-color: tomato;
+  color: whitesmoke;
+}
+text {
+  font-family: monospace;
+}
+body {
+  background: whitesmoke;
+font-size: 12px;
+font-family: monospace;
+padding-left: 0px;
+padding-right: 0px;
+}
+
+menu {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 400px;
+  line-height: 36px;
+  padding: 0px;
+  color: rgba(255, 0, 255, 0.35);
+}
+header {
+  padding-left: 10px;
+  left: 20px;
+  position: fixed;
+  top: 10px;
+  color: rgba(255, 0, 0, 0.8);
+  width: 100%;
+}
+
+footer {
+  padding-left: 10px;
+  color: rgba(255, 0, 0, .8);
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+}
+hr {
+  color: rgba(0, 0, 255, 0.5);
+}
+#grad2 {
+  height: 100%;
+  max-width: 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: auto;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgb(180, 130, 180), rgb(255, 255, 150)); /* Standard syntax (must be last) */
+}
+.frame {
+  background-color: #grad2;
+  max-width: 50%;
+  border: 1px dashed rgba(0, 0, 0, 0.5);
+  padding: 100px;
+  margin-bottom: 1000px;
+  margin: auto;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
