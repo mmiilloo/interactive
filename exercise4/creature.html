@@ -1,0 +1,301 @@
+<html>
+
+<head>
+
+	<title>creaature</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+
+	#float {
+			height: 40px;
+			width: 4px;
+			position: absolute;
+			z-index: 6;
+			background: rgba(255, 220, 240, 0.5);
+			border-radius: 50%;
+		}
+		@-webkit-keyframes floater {
+			0% {
+				transform: scale(1.0);
+			}
+			50% {
+				transform: scale(2.0);
+			}
+			100% {
+				transform: scale(1.0);
+			}
+
+}
+
+
+	#candle {
+			height: 400px;
+			width: 400px;
+			position: absolute;
+			top: 190px;
+			left: 240px;
+			z-index: 6;
+		}
+		#flame {
+			background: rgba(30, 30, 105, .75);
+	    height: 400px;
+	    width: 400px;
+	    position: absolute;
+			margin: auto;
+			padding: 200px;
+	    left: 26px;
+	    top: -2px;
+			padding: 45px;
+	    border-bottom-right-radius: 50%;
+	    border-bottom-left-radius: 50%;
+				    border-top-left-radius: 50%;
+							    border-top-right-radius: 50%;
+			-webkit-animation-duration: 30s;
+		  -webkit-animation-name: flicker;
+		  -webkit-animation-iteration-count: infinite;
+		  -webkit-animation-direction: alternate-reverse;
+		  -webkit-animation-timing-function: ease-in-out;
+			z-index: 11;
+					box-shadow: 0 0 125px 25px rgba(100, 100, 255, 0.25);
+		}
+		@-webkit-keyframes flicker {
+			0% {
+				border-bottom-right-radius: 45%;
+				border-bottom-left-radius: 50%;
+							border-top-left-radius: 46%;
+										border-top-left-radius: 50%;
+				transform: rotate(55deg);
+										transform: skewX(0deg);
+										transform: skewX(0deg);
+										transform: scale(1.0);
+										left: 0px;
+			}
+			13% {
+
+				border-bottom-right-radius: 50%;
+				border-bottom-left-radius: 47%;
+							border-top-left-radius: 50%;
+										border-top-left-radius: 43%;
+														transform: rotate(0deg);
+										transform: skewX(10deg);
+										transform: skewX(5deg);
+										top: 500px;
+			}
+			27% {
+
+				border-bottom-right-radius: 50%;
+				border-bottom-left-radius: 50%;
+							border-top-left-radius: 50%;
+										border-top-left-radius: 50%;
+														transform: rotate(-50deg);
+										transform: skewX(-7deg);
+										transform: skewX(-12deg);
+			}
+			41% {
+
+				border-bottom-right-radius: 48%;
+				border-bottom-left-radius: 50%;
+							border-top-left-radius: 45%;
+										border-top-left-radius: 50%;
+														transform: rotate(-100deg);
+										transform: skewX(12deg);
+										transform: skewX(0deg);
+										top: 0px;
+
+			}
+			63% {
+
+				border-bottom-right-radius: 45%;
+				border-bottom-left-radius: 50%;
+							border-top-left-radius: 46%;
+										border-top-left-radius: 50%;
+													transform: rotate(10deg);
+																							transform: scale(1.2);
+			}
+			73% {
+
+				border-bottom-right-radius: 50%;
+				border-bottom-left-radius: 47%;
+							border-top-left-radius: 50%;
+										border-top-left-radius: 40%;
+														transform: rotate(20deg);
+
+			}
+			87% {
+
+				border-bottom-right-radius: 50%;
+				border-bottom-left-radius: 50%;
+							border-top-left-radius: 50%;
+										border-top-left-radius: 50%;
+														transform: rotate(40deg);
+										transform: skewX(-70deg);
+										transform: skewX(-5deg);
+										transform: scale(1.1);
+			}
+			100% {
+				border-bottom-right-radius: 45%;
+				border-bottom-left-radius: 50%;
+							border-top-left-radius: 46%;
+										border-top-left-radius: 50%;
+				transform: rotate(55deg);
+										transform: skewX(0deg);
+										transform: skewX(0deg);
+																				transform: scale(1.0);
+																				left: 600px;
+																				top: 500px;
+
+			}
+		}
+
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: white;
+	}
+	.blob {
+		animation: pulse 1s infinite;
+	}
+
+	.blob {
+		height: 450px;
+		width: 450px;
+		margin: 0 auto;
+		background-color: rgba(50, 50, 50, 0.5);
+		animation-name: stretch;
+		animation-duration: 3.5s;
+		animation-timing-function: ease-out;
+		animation-delay: 0;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+		animation-fill-mode: none;
+		animation-play-state: running;
+	}
+
+	@keyframes breath {
+		0% {
+			transform: scale(.95);
+			background-color: rgba(200, 200, 200, 0.2);
+			border-radius: 100%;
+			box-shadow: 0 0 35px 25px rgba(10, 0, 100, 0.0);
+
+		}
+		50% {
+			transform: scale(1.1);
+			background-color: rgba(200, 200, 200, 0.2);
+			border-radius: 30%;
+			box-shadow: 0 0 35px 25px rgba(10, 0, 100, 0.0);
+
+		}
+		100% {
+			transform: scale(.95);
+			background-color: rgba(200, 200, 200, 0.2);
+			border-radius: 100%;
+			box-shadow: 0 0 35px 25px rgba(10, 0, 100, 0.0);
+
+		}
+	}
+
+	.element {
+	  animation: pulse 5s infinite;
+	}
+
+	.element {
+	  height: 150px;
+	  width: 150px;
+	  margin: 0 auto;
+	  background-color: blue;
+	  animation-name: stretch;
+	  animation-duration: .5s;
+	  animation-timing-function: ease-out;
+	  animation-delay: 0;
+	  animation-direction: alternate;
+	  animation-iteration-count: infinite;
+	  animation-fill-mode: none;
+	  animation-play-state: running;
+		z-index: 1;
+	}
+
+
+	@keyframes stretch {
+	  0% {
+	    transform: scale(.95);
+	    background-color: rgba(255, 0, 0, 0.5);
+	    border-radius: 100%;
+			box-shadow: 0 0 35px 25px rgba(255, 0, 0, 0.0);
+
+	  }
+
+		50% {
+			box-shadow: 0 0 35px 25px rgba(255, 0, 0, 0.0);
+	}
+	70% {
+		transform: scale(1);
+		background-color: rgba(255, 0, 0, .6);
+		border-radius: 100%;
+		animation-timing-function: ease-out;
+		box-shadow: 0 0 35px 25px rgba(255, 0, 0, 0.25);
+}
+75% {
+
+box-shadow: 0 0 35px 25px rgba(255, 0, 0, 0.1);
+}
+
+80% {
+	transform: scale(.95);
+	background-color: rgba(255, 0, 0, 0.7);
+	border-radius: 100%;
+	animation-timing-function: ease-out;
+box-shadow: 0 0 35px 25px rgba(255, 0, 0, 0.0);
+}
+
+100% {
+	transform: scale(.90);
+	background-color: rgba(255, 0, 0, 0.6);
+	border-radius: 100%;
+	animation-timing-function: ease-out;
+	box-shadow: 0 0 35px 25px rgba(255, 0, 0, 0.0);
+}
+}
+
+
+	body,
+	html {
+	  height: 100%;
+	}
+
+	body {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+
+			<!-- below is where you put your objects in your still life -->
+
+
+			</div>
+			<div id="candle">
+				<div id="flame">
+					<div class="element"></div>
+									<div id="float"></div>
+
+				</div>
+
+			</div>
+
+
+
+		<!-- this ends the canvas div. do not delete this! -->
+
+</body>
+
+</html>

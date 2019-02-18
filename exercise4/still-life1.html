@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: white;
+	}
+
+	/* this is where you can style the objects in your still life */
+	#triangle {
+		width: 0;
+		height: 0;
+		border-left: 100px solid transparent;
+		border-right: 100px solid transparent;
+		border-bottom: 200px solid yellow;
+		position: absolute;
+		top: 160px;
+		left: 100px;
+	}
+	#dashed-line2 {
+		top: 196px;
+		left: -10px;
+				z-index: 120;
+		width: 810px;
+		height: 0px;
+		background: rgba(255, 0, 0, 0.0);
+		position: absolute;
+		border: .5px dashed orange;
+		transform:rotate(-14.25deg);
+
+	}
+	#dashed-line3 {
+		top: 132px;
+		left: 781px;;
+				z-index: 120;
+		width: 150px;
+		height: 0px;
+		background: rgba(255, 0, 0, 0.0);
+		position: absolute;
+		border: .5px dashed orange;
+		transform:rotate(28deg);
+
+	}
+	#dashed-line4 {
+		top: 440px;
+		left: -43px;;
+				z-index: 120;
+		width: 500px;
+		height: 0px;
+		background: rgba(255, 0, 0, 0.0);
+		position: absolute;
+		border: .5px dashed orange;
+		transform:rotate(27.7deg);
+
+	}
+	#dashed-line5 {
+		top: 382px;
+    left: 632px;
+    z-index: 120;
+    width: 125px;
+    width: 117px;
+    height: 0px;
+    background: rgba(255, 0, 0, 0.0);
+    position: absolute;
+    border: .5px dashed #ffe500;
+    transform: rotate(-4.5deg);
+
+	}
+	#dashed-line6 {
+		top: 304px;
+		    left: 478px;
+		    z-index: 109;
+		    width: 125px;
+		    width: 100px;
+		    height: 0px;
+		    background: rgba(255, 0, 0, 0.0);
+		    position: absolute;
+		    border: .5px dashed #ffe500;
+		    transform: rotate(-4.5deg);
+
+	}
+
+#dashed-line {
+	top: 50px;
+	left: 90px;
+	background: lightblue;
+	position: absolute;
+	transform:
+}
+
+#circle {
+	content: '';
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: rgba(255, 0, 0, 0.0);
+	border: 1px dashed blue;
+	top: 50px;
+	right: 50px;
+}
+
+#dashed-line #dash1 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+#dashed-line #dash2 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+#dashed-line #dash3 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+}
+#dashed-line #dash4 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 40px;
+}
+#dashed-line #dash5 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+}
+#dashed-line #dash6 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 60px;
+}
+#dashed-line #dash7 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 70px;
+}
+#dashed-line #dash8 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 80px;
+}
+#dashed-line #dash9 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 90px;
+}
+#dashed-line #dash10 {
+	width: 7px;
+	height: 1px;
+	background: black;
+	position: absolute;
+	top: 10px;
+	left: 100px;
+}
+
+
+	#rectangle {
+		width: 1220px;
+		height: 350px;
+		background: orange;
+		position: relative;
+		top: 200px;
+		left: 90px;
+		transform: skew(60deg) rotate(-10deg);
+		clip-path: rect(100px, 290px, 290px, 100px);
+	}
+
+	#rectangle2 {
+		width: 900px;
+		height: 556px;
+		margin: -450px auto;
+		background: rgba(55, 0, 112, 0.53);
+		position: relative;
+		top: 100px;
+	}
+
+	#clementine1 {
+		width: 102px;
+    height: 87px;
+    background: orangered;
+    border-radius: 100px / 100px;
+    position: absolute;
+    z-index: 9;
+    top: 260px;
+    left: 478px;
+    }
+
+		#clementine2 {
+			width: 123px;
+			    height: 109px;
+			    background: orangered;
+			    border-radius: 100px / 100px;
+			    position: absolute;
+			    z-index: 10;
+			    top: 332px;
+			    left: 630px
+			}
+
+			#clementine3 {
+				width: 93px;
+				    height: 85px;
+				    background: orangered;
+				    border-radius: 100px / 100px;
+				    position: absolute;
+				    top: 276px;
+				    left: 295px;
+				}
+
+		#egg {
+			display: block;
+	    width: 80px;
+	    height: 109px;
+	    background-color: whitesmoke;
+	    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	    position: absolute;
+	    transform: rotate(90deg);
+	    top: 322px;
+	    left: 300px;
+	 }
+
+	 #egghighlight {
+		 display: block;
+		     width: 23px;
+		     height: 30px;
+		     background-color: white;
+		     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+		     position: relative;
+		     transform: rotate(90deg) scale(30%);
+		     top: 10px;
+		     left: 15px;
+	}
+
+	#book {
+		width: 120px;
+		    height: 238px;
+		    background: firebrick;
+		    position: absolute;
+		    top: 225px;
+		    left: 537px;
+		    transform: rotate(45deg) skew(-40deg)
+
+	}
+
+	#parallelogram {
+	width: 150px;
+	height: 100px;
+	transform: skew(20deg);
+	background: red;
+}
+
+
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+<div id="rectangle"></div>
+<div id="dashed-line2"></div>
+<div id="dashed-line3"></div>
+<div id="dashed-line4"></div>
+<div id="dashed-line5"></div>
+<div id="dashed-line6"></div>
+<div id="rectangle2"></div>
+<div id="clementine1"></div>
+<div id="clementine2"></div>
+<div id="clementine3"></div>
+<div id="egg"><div id="egghighlight"></div></div>
+<div id="book"></div>
+<div id="circle"></div>
+
+<div id="dashed-line">
+	<div id="dash1"></div>
+	<div id="dash2"></div>
+	<div id="dash3"></div>
+	<div id="dash4"></div>
+	<div id="dash5"></div>
+	<div id="dash6"></div>
+	<div id="dash7"></div>
+	<div id="dash8"></div>
+	<div id="dash9"></div>
+	<div id="dash10"></div>
+	</div>
+
+
+
+
+
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+
+</body>
+
+</html>

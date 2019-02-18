@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+
+		.canvas {
+			/* if you want to change the background of your canvas, do it here */
+			background: #485c84;
+		}
+
+		/* this is where you can style the objects in your still life */
+		#clementine {
+			width: 100px;
+			height: 95px;
+			position: absolute;
+			top: 250px;
+			right: 100px;
+			border-radius: 48%;
+			background: orangered;
+		}
+		#clementine #highlight1 {
+			width: 85px;
+			height: 85px;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			border-radius: 48%;
+			background: rgba(255, 255, 0, .3);
+								box-shadow: 0 0 5px rgba(255, 255, 0, .3);
+		}
+		#clementine #highlight2 {
+			width: 85px;
+			height: 85px;
+			position: absolute;
+			top: 5px;
+			right: 0px;
+			border-radius: 48%;
+			background: orangered;
+
+		}
+
+	#lamp {
+		width: 180px;
+		height: 130px;
+		position: absolute;
+		top: 200px;
+		left: 200px;
+	}
+
+	#lamp #orb {
+		width: 100%;
+		height: 100%;
+		background: rgba(255, 250, 200, 0.95);
+		border-radius: 45%;
+		position: absolute;
+		z-index: 10;
+		-webkit-transition: .3s box-shadow ease-out;
+		-moz-transition: .3s box-shadow ease-out;
+		-o-transition: .3s box-shadow ease-out;
+	}
+
+	#lamp #orb:hover {
+		box-shadow: 0 0 35px 25px rgba(255, 255, 200, 0.4);
+	}
+
+	#lamp #stand {
+		width: 100px;
+		height: 20px;
+		z-index: 9;
+		border-bottom-left-radius: 100%;
+		border-bottom-right-radius: 100%;
+		background: white;
+		position: absolute;
+		bottom: -14px;
+		left: 39px;
+	}
+
+	#lamp #shadow{
+		width: 90px;
+		height: 18px;
+		z-index: 8;
+		box-shadow: 0 0 5px 5px rgba(0, 0, 40, 0.4);
+		border-bottom-left-radius: 100%;
+		border-bottom-right-radius: 100%;
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+		bottom: -18px;
+		left: 44px;
+	}
+
+	#lamp #glow {
+		width: 100%;
+		height: 30%;
+		z-index: 7;
+		box-shadow: 0 0 35px 25px rgba(255, 255, 200, 0.25);
+		border-bottom-left-radius: 100%;
+		border-bottom-right-radius: 100%;
+		border-top-left-radius: 100%;
+		border-top-right-radius: 100%;
+		background: rgba(222, 222, 0, 0.0);
+		position: absolute;
+		bottom: -33px;
+		left: 0px;
+	}
+	#lamp #orb.hover:hover {
+		width: 100%;
+		height: 30%;
+		z-index: 7;
+		box-shadow: 0 0 35px 25px rgba(255, 255, 200, 0.4);
+		border-bottom-left-radius: 100%;
+		border-bottom-right-radius: 100%;
+		border-top-left-radius: 100%;
+		border-top-right-radius: 100%;
+		background: rgba(222, 222, 0, 0.5);
+		position: absolute;
+		bottom: -33px;
+		left: 0px;
+	}
+
+		#glass {
+			width: 110px;
+			height: 190px;
+			position: absolute;
+			top: 90px;
+			left: 550px;
+			border-left: 1px solid white;
+			border-right: 1px solid white;
+		}
+
+		#glass #top {
+		position: absolute;
+		height: 16px;
+		width: 100%;
+		top: -15px;
+		left: -1px;
+		border-radius: 50%;
+		border: 1px solid white;
+	}
+
+	#glass #water {
+		position: absolute;
+		top: 60%;
+		height: 40%;
+		width: 100%;
+		z-index: 6;
+		background: white;
+		opacity: 0.3;
+	}
+
+	#glass #reflection1 {
+	 width: 10%;
+	 height: 80%;
+			 z-index: 12;
+			 left: 10px;
+			 top: 40px;
+	 position: absolute;
+	 z-index: 5;
+	 background: rgba(255, 222, 190, 1);
+	 opacity: 0.3;
+	 border-radius: 50%;
+ }
+ #glass #reflection2 {
+	width: 14%;
+	height: 84%;
+			z-index: 12;
+			left: 70px;
+			top: 15px;
+	position: absolute;
+	background: rgba(255, 222, 190, 1);
+	opacity: 0.3;
+	border-radius: 50%;
+ }
+
+	#glass #water-top {
+		position: absolute;
+		top: calc(60% - 8px);
+		height: 16px;
+		width: 100%;
+		border-radius: 50%;
+		background: white;
+	}
+
+	#glass #bottom {
+		position: absolute;
+		height: 16px;
+		width: 100%;
+		bottom: -8px;
+		z-index: 7;
+		border-radius: 50%;
+		background: #60656f;
+	}
+
+	#cats {
+		width: 130px;
+		height: 150px;
+		position: absolute;
+		z-index: 11;
+		top: 230px;
+		left: 490px;
+	}
+
+	#cats #dome {
+		width: 96%;
+		height: 85%;
+		left: 2%;
+		top: -5%;
+		position: absolute;
+		background: white;
+		opacity: 0.3;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+
+	#cats #reflection1 {
+		width: 8%;
+		height: 60%;
+				z-index: 12;
+				left: 10px;
+				top: 20px;
+		position: absolute;
+		background: rgba(255, 222, 190, 1);
+		opacity: 0.3;
+		border-radius: 50%;
+	}
+
+	#cats #stand {
+		width: 100%;
+		height: 25%;
+		position: absolute;
+		border-top-left-radius: 15%;
+		border-top-right-radius: 15%;
+		bottom: 0;
+		background: red;
+	}
+
+	#cats #stand-bottom {
+		width: 100%;
+		height: 20px;
+		border-radius: 50%;
+		position: absolute;
+		bottom: -10px;
+		background: red;
+	}
+
+	#cats #stand-top {
+		width: 100%;
+		height: 20px;
+		border-radius: 50%;
+		position: absolute;
+		bottom: 22px;
+		background: #f04d4d;
+	}
+
+	#cats #cat {
+		height: 92px;
+		width: 58px;
+		position: absolute;
+		left: 40px;
+		bottom: 35px;
+	}
+
+	#cats #cat #body {
+		width: 100%;
+		height: 60%;
+		position: absolute;
+		bottom: 0;
+		background: gold;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+
+	#cats #cat #head {
+		width: 100%;
+		height: 40%;
+		border-radius: 50%;
+		position: absolute;
+		top: 2%;
+		background: gold;
+		-webkit-animation-duration: .5s;
+		-webkit-animation-name: bob;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-timing-function: ease-in-out;
+	}
+	#cats #cat #head #ear-l {
+		width: 20%;
+		height: 50%;
+		border-radius: 50%;
+		position: absolute;
+		top: -6px;
+		left: 5px;
+		background: gold;
+
+	}
+	#cats #cat #head #ear-r {
+		width: 20%;
+		height: 50%;
+		border-radius: 50%;
+		position: absolute;
+		top: -6px;
+		right: 5px;
+		background: gold;
+
+	}
+	#cats #cat-l {
+		height: 62px;
+		width: 40px;
+		position: absolute;
+		left: 20px;
+		bottom: 25px;
+	}
+
+	#cats #cat-l #body {
+		width: 100%;
+		height: 60%;
+		position: absolute;
+		bottom: 0;
+		background: yellow;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+
+	#cats #cat-l #head {
+		width: 100%;
+		height: 40%;
+		border-radius: 50%;
+		position: absolute;
+		top: 2%;
+		background: yellow;
+		-webkit-animation-duration: .5s;
+		-webkit-animation-name: bob;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-timing-function: ease-in-out;
+	}
+	#cats #cat-l #head #ear-l {
+		width: 20%;
+		height: 50%;
+		border-radius: 50%;
+		position: absolute;
+		top: -6px;
+		left: 5px;
+		background: yellow;
+
+	}
+	#cats #cat-l #head #ear-r {
+		width: 20%;
+		height: 50%;
+		border-radius: 50%;
+		position: absolute;
+		top: -6px;
+		right: 5px;
+		background: yellow;
+
+	}
+	#cats #cat-r {
+		height: 62px;
+		width: 40px;
+		position: absolute;
+		right: 20px;
+		bottom: 25px;
+	}
+
+	#cats #cat-r #body {
+		width: 100%;
+		height: 60%;
+		position: absolute;
+		bottom: 0;
+		background: yellow;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+
+	#cats #cat-r #head {
+		width: 100%;
+		height: 40%;
+		border-radius: 50%;
+		position: absolute;
+		top: 2%;
+		background: yellow;
+		-webkit-animation-duration: .5s;
+		-webkit-animation-name: bob;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-timing-function: ease-in-out;
+	}
+	#cats #cat-r #head #ear-l {
+		width: 20%;
+		height: 50%;
+		border-radius: 50%;
+		position: absolute;
+		top: -6px;
+		left: 5px;
+		background: yellow;
+
+	}
+	#cats #cat-r #head #ear-r {
+		width: 20%;
+		height: 50%;
+		border-radius: 50%;
+		position: absolute;
+		top: -6px;
+		right: 5px;
+		background: yellow;
+
+	}
+
+	@-webkit-keyframes bob {
+
+		from {
+			transform: rotate(5deg);
+		}
+
+		to {
+			transform: rotate(-5deg);
+		}
+
+	}
+
+
+		</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+    	<div id="lamp">
+				<div id="orb"></div>
+				<div id="stand"></div>
+				<div id="shadow"></div>
+				<div id="glow"></div>
+			</div>
+			<div id="glass">
+				<div id="reflection1"></div>
+				<div id="reflection2"></div>
+				<div id="top"></div>
+				<div id="water-top"></div>
+				<div id="water"></div>
+				<div id="bottom"></div>
+			</div>
+			<div id="clementine">
+					<div id="highlight1"></div>
+					<div id="highlight2"></div>
+			</div>
+			<div id="cats">
+				<div id="reflection1"></div>
+				<div id="dome"></div>
+				<div id="stand"></div>
+				<div id="stand-top"></div>
+				<div id="stand-bottom"></div>
+				<div id="cat">
+					<div id="head">
+						<div id="ear-l"></div>
+						<div id="ear-r"></div>
+					</div>
+					<div id="body"></div>
+				</div>
+				<div id="cat-l">
+					<div id="head">
+						<div id="ear-l"></div>
+						<div id="ear-r"></div>
+					</div>
+				<div id="body"></div>
+				</div>
+				<div id="cat-r">
+					<div id="head">
+						<div id="ear-l"></div>
+						<div id="ear-r"></div>
+					</div>
+				<div id="body"></div>
+				</div>
+			</div>
+
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+
+</body>
+
+</html>
