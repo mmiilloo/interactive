@@ -1,0 +1,33 @@
+
+@media print {
+
+	body {
+		margin: 0;
+		color: #000;
+		background-color: #fff;
+	}
+		#keyboard-arrows {
+				display: none;
+		}
+		#side-column {
+				height: auto;
+				overflow: hidden;
+		}
+		#main-column {
+				width: 50%;
+				margin: 0;
+				height: auto;
+				position: relative;
+		}
+		#archives {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		}
+		li.current path {
+				fill: #000000 !important;
+				color: #000000 !important;
+		}
+		li:not(.current) {
+				display: none !important;
+		}
+}
