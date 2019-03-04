@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>jQuery Exercise</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.min.js"></script>
+    <style>
+
+    img {
+      width: 60%;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+
+        <header role="banner">
+            <h1>Pigeon Crossing</h1>
+        </header>
+
+        <div id="status">
+            STOP
+        </div>
+
+        <img src="img/pigeon.gif" id="pigeon" >
+
+        <img src="img/yale-crest.png" id="crest">
+
+        <div id="button" role="content">
+            T-R-A-F-F-I-C L-I-G-H-T
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+    <!-- <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('#crest').hide();
+        $('body').addClass('gradient');
+        $('#status').show();
+
+        var stop = true;
+
+        $('')
+
+        console.log(stop);
+        $('#button').click(function(){
+          if(stop == true){
+            console.log('waaat?');
+            $('#status').html('GO');
+            $('#status').css('background', 'green');
+            stop = false;
+            console.log(stop);
+          } else {
+
+            $('#status').html('STOP');
+            $('#status').css('background','red');
+            stop = true;
+            console.log(stop);
+          }
+        });
+      });
+    </script> -->
+
+  </body>
+</html>
