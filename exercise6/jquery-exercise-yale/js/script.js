@@ -43,7 +43,7 @@ $(document).ready(function(){
   $('#status').show();
 
   var stop = true;
-  // 
+  //
   // var auto = setInterval(toggleLight, 5000);
 
   $('')
@@ -66,4 +66,29 @@ $(document).ready(function(){
       console.log(stop);
     }
   });
+
+//part 3//
+
+function changeLights() {
+
+  if(stop == true){
+    console.log('waaat?');
+    $('#status').html('GO');
+    $('#status').css('background', 'green');
+      $('#pigeon').fadeIn("slow");
+    stop = false;
+
+  } else {
+
+    $('#status').html('STOP');
+    $('#status').css('background','red');
+      $('#pigeon').fadeOut("slow");
+    stop = true;
+
+}
+}
+
+setInterval(function() {
+  changeLights();
+}, 3000);
 });

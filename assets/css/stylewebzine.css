@@ -1,0 +1,84 @@
+
+body {
+  font-size: 1em;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+
+mark {
+  background-color: rgba(255, 245, 0, 0.85);
+  color: rgba(0, 10, 0, 0.65);
+}
+
+.frame {
+    background-color: rgba(0, 255, 0, .0);
+    border: 1px dashed black;
+    padding: 10px;
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.top {
+  padding: 50px;
+  border: 0px solid black;
+  padding: 80px;
+  width: 50%;
+  font-size: 4em;
+  font-family: monospace;
+  padding-left: 30%;
+  padding-right: 30%;
+  color: rgba(0, 0, 255, 1.0);
+  z-index: 20;
+}
+
+
+
+footer {
+  padding-left: 10px;
+    font-size: 2em;
+  color: black;
+  width: 80%;
+  position: fixed;
+  bottom: 10px;
+  z-index: -10;
+}
+
+header {
+  padding: 10px;
+    font-size: 2em;
+  color: black;
+  position: fixed;
+  top: 10px;
+  z-index: -10;
+}
+
+iframe {
+  z-index: -1;
+}
+
+
+.column {
+  float: left;
+  width: 17%;
+  padding: 5px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#player {
+ width: 100%;
+ background-color: red;
+ border-radius: 0px;
+}​
