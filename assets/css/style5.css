@@ -1,7 +1,7 @@
 /* style5.css */
 
 body {
-    color: rgba(0, 100, 255, 0.4);
+    color: rgba(0, 120, 255, 0.5);
 }
 
 .detail {
@@ -25,7 +25,7 @@ a:visited {
 
 a:hover {
     color: rgba(255, 0, 255, .75);
-    background-color: rgba(255, 255, 0, .85);
+    background-color: rgba(255, 255, 0, .75);
 }
 
 
@@ -90,13 +90,13 @@ menu {
     left: 0;
     width: 400px;
     padding: 25px;
-    color: rgba(255, 0, 255, 0.35);
+    color: rgba(255, 0, 255, 0.5);
 }
 
 header {
     padding: 100px;
     position: fixed;
-    color: rgba(255, 0, 0, 0.35);
+    color: rgba(255, 0, 0, 0.45);
     width: 100%;
     top: 0px;
     transform: rotate(5deg);
@@ -104,7 +104,7 @@ header {
 
 footer {
     padding-left: 10%;
-    color: rgba(255, 0, 0, 0.35);
+    color: rgba(255, 0, 0, 0.45);
     position: fixed;
     bottom: 10px;
     left: -110px;
@@ -112,16 +112,16 @@ footer {
 }
 
 hr {
-    color: rgba(0, 0, 255, 0.5);
+    color: rgba(0, 0, 255, 0.95);
 }
 
 .frame {
     background-color: #ebebeb;
     max-width: 80%;
-    border: 1px dashed rgba(0, 255, 0, .9);
+    border: 1px dashed rgba(0, 255, 0, .5);
     padding: 25px;
     margin: auto;
-    border-bottom-left-radius: 150px;
-    border-bottom-right-radius: 150px;
-    border-top-left-radius: 150px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
 }
