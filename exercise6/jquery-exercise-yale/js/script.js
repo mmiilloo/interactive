@@ -88,7 +88,7 @@ function changeLights() {
 }
 }
 
-setInterval(function() {
-  changeLights();
-}, 3000);
+// setInterval(function() {
+//   changeLights();
+// }, 3000);
 });
